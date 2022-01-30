@@ -1,0 +1,57 @@
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1000px, initial-scale=1.0">
+    <title>Resource bonus calculator</title>
+</head>
+<body>
+    <h1>Resource Bonus Calculator</h1>
+    <main>
+        <section>
+            <table class="input">
+                <tr>
+                    <td><label for="treasury">Treasury</label></td>
+                    <td>
+                        <span class="percent">
+                            <input
+                                id="treasury"
+                                type="number"
+                                pattern="[0-9]{1,2}([\,|\.][0-9]{1,2})?"
+                                name="treasury"
+                                step="0.01"
+                                title="The number input must start with a number and use either comma or a dot as a decimal character."
+                                value = "0"
+                            >
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Double Production
+                    </td>
+                    <td>
+                        <label class="switch">
+                            <input type="checkbox" id="double">
+                            <span></span>
+                        </label>
+                    </td>
+                </tr>
+            </table>
+        </section>
+        <section>
+            <table class="output" id="output">
+                <tr>
+                    <th>Eff. Res.</th>
+                    <th>Res. Rate</th>
+                    <th>Cost</th>
+                    <th>Output</th>
+                    <th id="eff">Efficiency</th>
+                </tr>
+            </table>
+        </section>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>
