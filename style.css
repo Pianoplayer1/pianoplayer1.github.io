@@ -1,11 +1,41 @@
+:root {
+    --background-primary: #36393F;
+    --background-secondary: #2F3136;
+    --switch-background: #72767D;
+    --switch-background-active: #3BA55D;
+    --switch-slider: #FFF;
+    --table-background-hover: rgba(255, 255, 255, 0.04);
+    --table-border: rgba(255, 255, 255, 0.06);
+    --text: #DCDDDE;
+    --text-input-bg: rgba(0, 0, 0, 0.1);
+    --text-input-border: rgba(0, 0, 0, 0.3);
+    --text-input-border-danger: #ED4245;
+    --text-input-border-hover: #040405;
+    --text-input-border-selected: #00AFF4;
+}
+
+@media (prefers-color-scheme: light) {
+    .light {
+        --background-primary: #FFF;
+        --background-secondary: #F2F3F5;
+        --table-background-hover: rgba(0, 0, 0, 0.08);
+        --table-border: rgba(6, 6, 7, .08);
+        --text: #2E3338;
+        --text-input-bg: rgba(79, 84, 92, 0.02);
+        --text-input-border: rgba(79, 84, 92, 0.3);
+        --text-input-border-hover: #B9BBBE;
+        --text-input-border-selected: #0068E0;
+    }
+}
+
 * {
     margin: 0;
     padding: 0;
 }
 
 body {
-    background-color: #2f3136;
-    color: #DCDDDE;
+    background-color: var(--background-secondary);
+    color: var(--text);
     font-family: Whitney, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
@@ -15,7 +45,7 @@ h1 {
 }
 
 main {
-    background-color: #36393f;
+    background-color: var(--background-primary);
     border-radius: 8px;
     display: flex;
     margin: 20px auto;
@@ -32,6 +62,7 @@ table {
 
 table td {
     padding: 5px;
+    transition: all 0.15s ease;
 }
 
 table th {
@@ -39,11 +70,11 @@ table th {
 }
 
 table td:not(:last-child), table th:not(:last-child) {
-    border-right: 1px solid #72767d;
+    border-right: 1px solid var(--table-border);
 }
 
 table tr:not(:last-child) td, table th {
-    border-bottom: 1px solid #72767d;
+    border-bottom: 1px solid var(--table-border);
 }
 
 .input td {
@@ -51,16 +82,16 @@ table tr:not(:last-child) td, table th {
 }
 
 .output tr:hover td {
-    background-color: #72767d20;
+    background-color: var(--table-background-hover);
 }
 
 
 input[type=number] {
     -moz-appearance: textfield;
-    background-color: #0000001a;
-    border: 1px solid #0000004d;
+    background-color: var(--text-input-bg);
+    border: 1px solid var(--text-input-border);
     border-radius: 3px;
-    color: #DCDDDE;
+    color: var(--text);
     font-family: Whitney, 'Helvetica Neue', Helvetica, Arial, sans-serif;
     height: 30px;
     outline: none;
@@ -70,11 +101,15 @@ input[type=number] {
 }
 
 input[type=number]:hover {
-    border-color: #040405;
+    border-color: var(--text-input-border-hover);
 }
 
 input[type=number]:focus {
-    border-color: #00aff4;
+    border-color: var(--text-input-border-selected);
+}
+
+input[type=number].invalid {
+    border-color: var(--text-input-border-danger);
 }
 
 input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button {
@@ -98,7 +133,7 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
 
 .switch span {
     -webkit-transition: all 0.4s ease;
-    background-color: #72767d;
+    background-color: var(--switch-background);
     border-radius: 14px;
     bottom: 0;
     cursor: pointer;
@@ -111,7 +146,7 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
 
 .switch span:before {
     -webkit-transition: .4s;
-    background-color: #fff;
+    background-color: var(--switch-slider);
     border-radius: 50%;
     bottom: 3px;
     content: "";
@@ -123,7 +158,7 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
 }
 
 .switch input:checked + span {
-    background-color: #3ba55d;
+    background-color: var(--switch-background-active);
 }
 
 .switch input:checked + span:before {

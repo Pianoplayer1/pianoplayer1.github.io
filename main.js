@@ -4,10 +4,10 @@ document.getElementById('storage').addEventListener('click', update);
 
 function treasury(e) {
     if ((e.target.value === '' ? '0' : e.target.value).match(/^\d{1,2}(?:[.,]\d{1,2})?$/)) {
-        e.target.style.borderColor = '';
+        e.target.classList.remove('invalid');
         update();
     } else {
-        e.target.style.borderColor = 'red';
+        e.target.classList.add('invalid');
     }
 }
 
