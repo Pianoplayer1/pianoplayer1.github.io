@@ -14,18 +14,16 @@
     --text-input-border-selected: #00AFF4;
 }
 
-@media (prefers-color-scheme: light) {
-    .light {
-        --background-primary: #FFF;
-        --background-secondary: #F2F3F5;
-        --table-background-hover: rgba(0, 0, 0, 0.08);
-        --table-border: rgba(6, 6, 7, .08);
-        --text: #2E3338;
-        --text-input-bg: rgba(79, 84, 92, 0.02);
-        --text-input-border: rgba(79, 84, 92, 0.3);
-        --text-input-border-hover: #B9BBBE;
-        --text-input-border-selected: #0068E0;
-    }
+[data-theme="light"] {
+    --background-primary: #FFF;
+    --background-secondary: #F2F3F5;
+    --table-background-hover: rgba(0, 0, 0, 0.08);
+    --table-border: rgba(6, 6, 7, .08);
+    --text: #2E3338;
+    --text-input-bg: rgba(79, 84, 92, 0.02);
+    --text-input-border: rgba(79, 84, 92, 0.3);
+    --text-input-border-hover: #B9BBBE;
+    --text-input-border-selected: #0068E0;
 }
 
 * {
@@ -155,6 +153,38 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
     position: absolute;
     transition: .4s;
     width: 18px;
+}
+
+nav {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.theme-switch {
+    height: 40px;
+    display: inline-block;
+    position: relative;
+    width: 40px;
+}
+
+.theme-switch input {
+    width: 0;
+    height: 0;
+    opacity: 0;
+}
+
+.theme-switch span {
+    -webkit-transition: all 0.4s ease;
+    background-color: var(--text);
+    border-radius: 50%;
+    bottom: 0;
+    cursor: pointer;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: all 0.4s ease;
 }
 
 .switch input:checked + span {

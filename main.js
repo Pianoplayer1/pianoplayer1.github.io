@@ -1,3 +1,20 @@
+if (localStorage.getItem('theme')) {
+    document.documentElement.setAttribute('data-theme', localStorage.getItem('theme'));
+    if (localStorage.getItem('theme') === 'light') {
+        document.getElementById('theme').checked = true;
+    }
+}
+document.getElementById('theme').addEventListener('change',e => {
+    if (e.target.checked) {
+        document.documentElement.setAttribute('data-theme', 'light');
+        localStorage.setItem('theme', 'light');
+    } else {
+        document.documentElement.setAttribute('data-theme', 'dark');
+        localStorage.setItem('theme', 'dark');
+    }
+});
+
+
 document.getElementById('treasury').addEventListener('input', treasury);
 document.getElementById('double').addEventListener('click', update);
 document.getElementById('storage').addEventListener('click', update);
