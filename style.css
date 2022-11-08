@@ -51,11 +51,36 @@ main {
     padding: 30px;
 }
 
+@media only screen and (max-width: 1110px) {
+    main {
+        margin: 20px 25px;
+    }
+}
 
 table {
     border-collapse: collapse;
     display: inline-block;
     width: calc(50% - 5px);
+}
+
+@media only screen and (max-width: 800px) {
+    main {
+        flex-direction: column;
+        margin: 20px 0;
+    }
+
+    table {
+        word-break: break-word;
+        width: 100%;
+    }
+
+    table:last-child {
+        margin-top: 50px;
+    }
+
+    .theme-switch span {
+        display: none;
+    }
 }
 
 table td {
@@ -95,7 +120,7 @@ input[type=number] {
     outline: none;
     padding: 5px;
     transition: border-color .2s ease-in-out;
-    width: 70px;
+    width: 50px;
 }
 
 input[type=number]:hover {
@@ -143,7 +168,7 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
 }
 
 .switch span:before {
-    -webkit-transition: .4s;
+    -webkit-transition: all 0.4s ease;
     background-color: var(--switch-slider);
     border-radius: 50%;
     bottom: 3px;
@@ -151,7 +176,7 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
     height: 18px;
     left: 3px;
     position: absolute;
-    transition: .4s;
+    transition: all 0.4s ease;
     width: 18px;
 }
 
