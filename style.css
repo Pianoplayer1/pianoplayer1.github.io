@@ -90,6 +90,8 @@ table td {
 
 table th {
     padding: 5px 10px;
+    user-select: none;
+    -webkit-user-select: none;
 }
 
 table td:not(:last-child), table th:not(:last-child) {
@@ -100,11 +102,16 @@ table tr:not(:last-child) td, table th {
     border-bottom: 1px solid var(--table-border);
 }
 
-.input td {
+table.input td {
     padding: 5px 20px;
 }
 
-.output tr:hover td {
+table.output th:hover {
+    background-color: var(--table-background-hover);
+    cursor: pointer;
+}
+
+table.output tr:hover td {
     background-color: var(--table-background-hover);
 }
 
