@@ -1,0 +1,340 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <title>News · Wynncraft Web API Documentation</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+
+
+    <link rel="stylesheet" href="../gitbook/style.css">
+    <link rel="stylesheet" href="../gitbook/gitbook-plugin-insert-logo-link-style/plugin.css">
+    <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+    <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+    <link rel="stylesheet" href="../gitbook/gitbook-plugin-theme-api/theme-api.css">
+
+
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152"
+          href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+<div class="book">
+    <div class="book-summary">
+        <nav role="navigation">
+            <ul class="summary">
+                <li class="divider"></li>
+
+                <li class="header">Overview</li>
+                <li class="chapter" data-level="1.1" data-path="../">
+                    <a href="../">Introduction</a>
+                </li>
+                <li class="chapter" data-level="1.2" data-path="../Responses/">
+                    <a href="../Responses/">Response codes</a>
+                </li>
+
+                <li class="divider"></li>
+
+                <li class="header">Resources</li>
+                <li class="chapter" data-level="2.1" data-path="../Class-API/">
+                    <a href="../Class-API/#wynncraft-class-resource">Class</a>
+                    <ul class="articles">
+                        <li class="chapter" data-level="2.1.1" data-path="../Class-API/">
+                            <a href="../Class-API/#ability-tree">Ability Tree</a>
+                        </li>
+                        <li class="chapter" data-level="2.1.2" data-path="../Class-API/">
+                            <a href="../Class-API/#ability-map">Ability Tree Map</a>
+                        </li>
+                        <li class="chapter" data-level="2.1.3" data-path="../Class-API/">
+                            <a href="../Class-API/#get">Get</a>
+                        </li>
+                        <li class="chapter" data-level="2.1.4" data-path="../Class-API/">
+                            <a href="../Class-API/#list">List</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="chapter" data-level="2.2" data-path="../Guild-API/">
+                    <a href="../Guild-API/#wynncraft-guild-resource">Guild</a>
+                    <ul class="articles">
+                        <li class="chapter" data-level="2.2.1" data-path="../Guild-API/">
+                            <a href="../Guild-API/#stats">Statistics</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="chapter" data-level="2.3" data-path="../Help-API/">
+                    <a href="../Help-API/#wynncraft-help-resource">Help</a>
+                    <ul class="articles">
+                        <li class="chapter" data-level="2.3.1" data-path="../Help-API/">
+                            <a href="../Help-API/#category">Category</a>
+                        </li>
+                        <li class="chapter" data-level="2.3.2" data-path="../Help-API/">
+                            <a href="../Help-API/#list">List</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="chapter" data-level="2.4" data-path="../Item-API/">
+                    <a href="../Item-API/#wynncraft-item-resource">Item</a>
+                    <ul class="articles">
+                        <li class="chapter" data-level="2.4.1" data-path="../Item-API/">
+                            <a href="../Item-API/#data">Data</a>
+                        </li>
+                        <li class="chapter" data-level="2.4.2" data-path="../Item-API/">
+                            <a href="../Item-API/#search">Search</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="chapter" data-level="2.5" data-path="../Leaderboard-API/">
+                    <a href="../Leaderboard-API/#wynncraft-leaderboard-resource">Leaderboard</a>
+                    <ul class="articles">
+                        <li class="chapter" data-level="2.5.1" data-path="../Leaderboard-API/">
+                            <a href="../Leaderboard-API/#guild">Guild</a>
+                        </li>
+                        <li class="chapter" data-level="2.5.2" data-path="../Leaderboard-API/">
+                            <a href="../Leaderboard-API/#player">Player</a>
+                        </li>
+                        <li class="chapter" data-level="2.5.3" data-path="../Leaderboard-API/">
+                            <a href="../Leaderboard-API/#pvp">PvP</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="chapter" data-level="2.6" data-path="../News-API/">
+                    <a href="../News-API/#wynncraft-news-resource">News</a>
+                    <ul class="articles">
+                        <li class="chapter" data-level="2.6.1" data-path="../News-API/">
+                            <a href="../News-API/#news">News</a>
+                        </li>
+                        <li class="chapter" data-level="2.6.2" data-path="../News-API/">
+                            <a href="../News-API/#tweets">Tweets</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="chapter" data-level="2.7" data-path="../Player-API/">
+                    <a href="../Player-API/#wynncraft-player-resource">Player</a>
+                    <ul class="articles">
+                        <li class="chapter" data-level="2.7.1" data-path="../Player-API/">
+                            <a href="../Player-API/#classes">Classes</a>
+                        </li>
+                        <li class="chapter" data-level="2.7.2" data-path="../Player-API/">
+                            <a href="../Player-API/#class-stats">Class Statistics</a>
+                        </li>
+                        <li class="chapter" data-level="2.7.3" data-path="../Player-API/">
+                            <a href="../Player-API/#list">List</a>
+                        </li>
+                        <li class="chapter" data-level="2.7.4" data-path="../Player-API/">
+                            <a href="../Player-API/#stats">Statistics</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="divider"></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+                <h1>
+                    <i class="fa fa-circle-o-notch fa-spin"></i>
+                    <a href="..">News</a>
+                </h1>
+            </div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                    <div id="book-search-results">
+                        <div class="search-noresults">
+                            <section class="normal markdown-section">
+                                <h1 id="wynncraft-news-resource">Wynncraft News Resource</h1>
+
+                                <h2 id="news">Latest News</h2>
+                                <hr>
+                                <div class="api-method">
+                                    <div class="api-method-definition">
+                                        <pre><code
+                                                class="lang-sh">GET https://web-api.wynncraft.com/v3/latest-news</code></pre>
+                                        <p>A list of the three latest news articles from the Wynncraft Forums.</p>
+                                        <h3 id="news-object">News Object</h3>
+                                        <table>
+                                            <thead>
+                                            <tr>
+                                                <th>Field</th>
+                                                <th>Type</th>
+                                                <th>Description</th>
+                                                <th>Options</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                <td>title</td>
+                                                <td>String</td>
+                                                <td>Title of the forum thread</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>date</td>
+                                                <td>String</td>
+                                                <td>Date of publication in a human-readable format</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>forumThread</td>
+                                                <td>String</td>
+                                                <td>Link to the original forum thread</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>author</td>
+                                                <td>String</td>
+                                                <td>Username of the poster</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>content</td>
+                                                <td>String</td>
+                                                <td>HTML content</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>comments</td>
+                                                <td>String</td>
+                                                <td>Number of comments in the thread</td>
+                                                <td></td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="api-method-code">
+                                        <div class="api-method-sample" data-lang="v3" data-name="Version 3">
+                                            <h4 id="news-response">Response</h4>
+                                            <pre><code class="lang-js">[
+    {
+        <span class="hljs-string">&quot;title&quot;</span>: <span class="hljs-built_in">String</span>,
+        <span class="hljs-string">&quot;date&quot;</span>: <span class="hljs-built_in">String</span>,
+        <span class="hljs-string">&quot;forumThread&quot;</span>: <span class="hljs-built_in">String</span>,
+        <span class="hljs-string">&quot;author&quot;</span>: <span class="hljs-built_in">String</span>,
+        <span class="hljs-string">&quot;content&quot;</span>: <span class="hljs-built_in">String</span>,
+        <span class="hljs-string">&quot;comments&quot;</span>: <span class="hljs-built_in">String</span>
+    },
+    <span class="hljs-comment">// ...</span>
+]</code></pre>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <h2 id="tweets">Latest Tweets</h2>
+                                <hr>
+                                <div class="api-method">
+                                    <div class="api-method-definition">
+                                        <pre><code
+                                                class="lang-sh">GET https://web-api.wynncraft.com/v3/latest-tweets</code></pre>
+                                        <p>A list of the five latest tweets from Wynncraft's Twitter account.</p>
+                                        <h3 id="tweet-object">Tweet Object</h3>
+                                        <table>
+                                            <thead>
+                                            <tr>
+                                                <th>Field</th>
+                                                <th>Type</th>
+                                                <th>Description</th>
+                                                <th>Options</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                <td>content</td>
+                                                <td>String</td>
+                                                <td>The text content of the tweet along with an HTML link to the
+                                                    original tweet
+                                                </td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>media</td>
+                                                <td>String</td>
+                                                <td>Link to the image of the tweet</td>
+                                                <td><code>null</code> if the tweet does not contain an imahe</td>
+                                            </tr>
+                                            <tr>
+                                                <td>date</td>
+                                                <td>String</td>
+                                                <td>Date of publication in a human-readable format</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>id</td>
+                                                <td>String</td>
+                                                <td>ID of the tweet</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>retweet</td>
+                                                <td>String</td>
+                                                <td>Whether the twete is a retweet</td>
+                                                <td><code>True</code>, <code>False</code></td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="api-method-code">
+                                        <div class="api-method-sample" data-lang="v3" data-name="Version 3">
+                                            <h4 id="tweets-response">Response</h4>
+                                            <pre><code class="lang-js">[
+    {
+        <span class="hljs-string">&quot;content&quot;</span>: <span class="hljs-built_in">String</span>,
+        <span class="hljs-string">&quot;media&quot;</span>: <span class="hljs-built_in">String</span>,
+        <span class="hljs-string">&quot;date&quot;</span>: <span class="hljs-built_in">String</span>,
+        <span class="hljs-string">&quot;id&quot;</span>: <span class="hljs-built_in">String</span>,
+        <span class="hljs-string">&quot;retweet&quot;</span>: <span class="hljs-built_in">String</span>
+    },
+    <span class="hljs-comment">// ...</span>
+]</code></pre>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function () {
+            gitbook.page.hasChanged({
+                "page": {},
+                "config": {
+                    "plugins": ["favicon-custom", "insert-logo-link-style", "theme-api"],
+                    "pluginsConfig": {
+                        "insert-logo-link-style": {
+                            "link": "https://wynncraft.com/",
+                            "src": "https://cdn.wynncraft.com/img/logo.png",
+                            "style": "background: none; width:50%;",
+                            "target": "_blank"
+                        },
+                        "fontsettings": {"theme": "white", "family": "sans", "size": 2},
+                        "theme-api": {"split": true, "theme": "light"}
+                    },
+                },
+                "file": {},
+                "gitbook": {},
+                "basePath": "..",
+                "book": {}
+            });
+        });
+    </script>
+</div>
+
+<script src="../gitbook/gitbook.js"></script>
+<script src="../gitbook/theme.js"></script>
+<script src="../gitbook/gitbook-plugin-insert-logo-link-style/plugin.js"></script>
+<script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+<script src="../gitbook/gitbook-plugin-theme-api/theme-api.js"></script>
+
+</body>
+</html>

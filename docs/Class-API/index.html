@@ -1,0 +1,796 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <title>Class · Wynncraft Web API Documentation</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+
+
+    <link rel="stylesheet" href="../gitbook/style.css">
+    <link rel="stylesheet" href="../gitbook/gitbook-plugin-insert-logo-link-style/plugin.css">
+    <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+    <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+    <link rel="stylesheet" href="../gitbook/gitbook-plugin-theme-api/theme-api.css">
+
+
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152"
+          href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+<div class="book">
+    <div class="book-summary">
+        <nav role="navigation">
+            <ul class="summary">
+                <li class="divider"></li>
+
+                <li class="header">Overview</li>
+                <li class="chapter" data-level="1.1" data-path="../">
+                    <a href="../">Introduction</a>
+                </li>
+                <li class="chapter" data-level="1.2" data-path="../Responses/">
+                    <a href="../Responses/">Response codes</a>
+                </li>
+
+                <li class="divider"></li>
+
+                <li class="header">Resources</li>
+                <li class="chapter" data-level="2.1" data-path="../Class-API/">
+                    <a href="../Class-API/#wynncraft-class-resource">Class</a>
+                    <ul class="articles">
+                        <li class="chapter" data-level="2.1.1" data-path="../Class-API/">
+                            <a href="../Class-API/#ability-tree">Ability Tree</a>
+                        </li>
+                        <li class="chapter" data-level="2.1.2" data-path="../Class-API/">
+                            <a href="../Class-API/#ability-map">Ability Tree Map</a>
+                        </li>
+                        <li class="chapter" data-level="2.1.3" data-path="../Class-API/">
+                            <a href="../Class-API/#get">Get</a>
+                        </li>
+                        <li class="chapter" data-level="2.1.4" data-path="../Class-API/">
+                            <a href="../Class-API/#list">List</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="chapter" data-level="2.2" data-path="../Guild-API/">
+                    <a href="../Guild-API/#wynncraft-guild-resource">Guild</a>
+                    <ul class="articles">
+                        <li class="chapter" data-level="2.2.1" data-path="../Guild-API/">
+                            <a href="../Guild-API/#stats">Statistics</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="chapter" data-level="2.3" data-path="../Help-API/">
+                    <a href="../Help-API/#wynncraft-help-resource">Help</a>
+                    <ul class="articles">
+                        <li class="chapter" data-level="2.3.1" data-path="../Help-API/">
+                            <a href="../Help-API/#category">Category</a>
+                        </li>
+                        <li class="chapter" data-level="2.3.2" data-path="../Help-API/">
+                            <a href="../Help-API/#list">List</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="chapter" data-level="2.4" data-path="../Item-API/">
+                    <a href="../Item-API/#wynncraft-item-resource">Item</a>
+                    <ul class="articles">
+                        <li class="chapter" data-level="2.4.1" data-path="../Item-API/">
+                            <a href="../Item-API/#data">Data</a>
+                        </li>
+                        <li class="chapter" data-level="2.4.2" data-path="../Item-API/">
+                            <a href="../Item-API/#search">Search</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="chapter" data-level="2.5" data-path="../Leaderboard-API/">
+                    <a href="../Leaderboard-API/#wynncraft-leaderboard-resource">Leaderboard</a>
+                    <ul class="articles">
+                        <li class="chapter" data-level="2.5.1" data-path="../Leaderboard-API/">
+                            <a href="../Leaderboard-API/#guild">Guild</a>
+                        </li>
+                        <li class="chapter" data-level="2.5.2" data-path="../Leaderboard-API/">
+                            <a href="../Leaderboard-API/#player">Player</a>
+                        </li>
+                        <li class="chapter" data-level="2.5.3" data-path="../Leaderboard-API/">
+                            <a href="../Leaderboard-API/#pvp">PvP</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="chapter" data-level="2.6" data-path="../News-API/">
+                    <a href="../News-API/#wynncraft-news-resource">News</a>
+                    <ul class="articles">
+                        <li class="chapter" data-level="2.6.1" data-path="../News-API/">
+                            <a href="../News-API/#news">News</a>
+                        </li>
+                        <li class="chapter" data-level="2.6.2" data-path="../News-API/">
+                            <a href="../News-API/#tweets">Tweets</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="chapter" data-level="2.7" data-path="../Player-API/">
+                    <a href="../Player-API/#wynncraft-player-resource">Player</a>
+                    <ul class="articles">
+                        <li class="chapter" data-level="2.7.1" data-path="../Player-API/">
+                            <a href="../Player-API/#classes">Classes</a>
+                        </li>
+                        <li class="chapter" data-level="2.7.2" data-path="../Player-API/">
+                            <a href="../Player-API/#class-stats">Class Statistics</a>
+                        </li>
+                        <li class="chapter" data-level="2.7.3" data-path="../Player-API/">
+                            <a href="../Player-API/#list">List</a>
+                        </li>
+                        <li class="chapter" data-level="2.7.4" data-path="../Player-API/">
+                            <a href="../Player-API/#stats">Statistics</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="divider"></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+                <h1>
+                    <i class="fa fa-circle-o-notch fa-spin"></i>
+                    <a href="..">Class</a>
+                </h1>
+            </div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                    <div id="book-search-results">
+                        <div class="search-noresults">
+                            <section class="normal markdown-section">
+                                <h1 id="wynncraft-class-resource">Wynncraft Class Resource</h1>
+                                <p>These endpoints return general information about the five Wynncraft classes and their
+                                    corresponding ability trees. Valid class names are <code>archer</code>,
+                                    <code>assassin</code>, <code>mage</code>, <code>shaman</code> and
+                                    <code>warrior</code>, in lowercase letters only.</p>
+                                <p>This information only changes when the game updates.</p>
+
+                                <h2 id="ability-tree">Ability Tree</h2>
+                                <hr>
+                                <div class="api-method">
+                                    <div class="api-method-definition">
+                                        <pre><code class="lang-sh">GET https://web-api.wynncraft.com/v3/ability/tree/{class name}</code></pre>
+                                        <p>Detailed description of the archetypes, abilities and the ability tree of a
+                                            Wynncraft class exactly as shown in the in-game ability tree menu.</p>
+                                        <p><strong>Note</strong>: To resemble the colors of the in-game menu text, some
+                                            string values include minecraft color codes, denoted by the character
+                                            <code>&</code> and the following number or letter.</p>
+                                        <h3 id="ability-tree-object">Ability Tree Object</h3>
+                                        <table>
+                                            <thead>
+                                            <tr>
+                                                <th>Field</th>
+                                                <th>Type</th>
+                                                <th>Description</th>
+                                                <th>Options</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                <td><a href="#ability-tree-archetype-object">archetypes</a></td>
+                                                <td>Object</td>
+                                                <td>Object of archetype objects mapped by their name</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td><a href="#ability-tree-ability-object">pages</a></td>
+                                                <td>Object</td>
+                                                <td>Object of page objects that map page numbers of the ability tree to
+                                                    ability objects found on that page
+                                                </td>
+                                                <td></td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                        <h3 id="ability-tree-archetype-object">Archetype Object (Ability Tree)</h3>
+                                        <table>
+                                            <thead>
+                                            <tr>
+                                                <th>Field</th>
+                                                <th>Type</th>
+                                                <th>Description</th>
+                                                <th>Options</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                <td>name</td>
+                                                <td>String</td>
+                                                <td>Display name of the archetype</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>description</td>
+                                                <td>String</td>
+                                                <td>Long description of the archetype</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>shortDescription</td>
+                                                <td>String</td>
+                                                <td>Short description of the archetype</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>icon</td>
+                                                <td>String</td>
+                                                <td>Website-internal mapping to an icon</td>
+                                                <td></td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                        <h3 id="ability-tree-ability-object">Ability Object (Ability Tree)</h3>
+                                        <table>
+                                            <thead>
+                                            <tr>
+                                                <th>Field</th>
+                                                <th>Type</th>
+                                                <th>Description</th>
+                                                <th>Options</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                <td>name</td>
+                                                <td>String</td>
+                                                <td>Display name of the ability</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>archetype</td>
+                                                <td>String</td>
+                                                <td>Archetype this ability belongs to</td>
+                                                <td>null if it does not belong to an archetype</td>
+                                            </tr>
+                                            <tr>
+                                                <td>icon</td>
+                                                <td>String</td>
+                                                <td>Website-internal mapping to an icon</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>slot</td>
+                                                <td>Number</td>
+                                                <td>Menu slot this ability is shown at in the in-game ability tree menu
+                                                </td>
+                                                <td>0 - 53</td>
+                                            </tr>
+                                            <tr>
+                                                <td><a href="#ability-tree-coordinates-object">coordinates</a></td>
+                                                <td>Object</td>
+                                                <td>Menu slot this ability is shown at in the in-game ability tree menu
+                                                    in a more readable format
+                                                </td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>description</td>
+                                                <td>Array of Strings</td>
+                                                <td>Description text of the ability, separated by lines</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td><a href="#ability-tree-requirements-object">requirements</a></td>
+                                                <td>Object</td>
+                                                <td>Requirements needed to unlock this ability</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>links</td>
+                                                <td>Array of Strings</td>
+                                                <td>Other abilities directly connected to this ability</td>
+                                                <td>null if no links exist</td>
+                                            </tr>
+                                            <tr>
+                                                <td>locks</td>
+                                                <td>Array of Strings</td>
+                                                <td>Other abilities that get blocked when unlocking this ability</td>
+                                                <td>null if this ability does not lock other abilities</td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                        <h3 id="ability-tree-coordinates-object">Coordinates Object (Ability Tree)</h3>
+                                        <table>
+                                            <thead>
+                                            <tr>
+                                                <th>Field</th>
+                                                <th>Type</th>
+                                                <th>Description</th>
+                                                <th>Options</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                <td>x</td>
+                                                <td>Number</td>
+                                                <td>x position of the ability or connector</td>
+                                                <td>1 - 9</td>
+                                            </tr>
+                                            <tr>
+                                                <td>y</td>
+                                                <td>Number</td>
+                                                <td>y position of the ability or connector</td>
+                                                <td>1 - 6</td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                        <h3 id="ability-tree-requirements-object">Requirements Object (Ability
+                                            Tree)</h3>
+                                        <table>
+                                            <thead>
+                                            <tr>
+                                                <th>Field</th>
+                                                <th>Type</th>
+                                                <th>Description</th>
+                                                <th>Options</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                <td>ABILITY_POINTS</td>
+                                                <td>Number</td>
+                                                <td>Ability points required to unlock this ability</td>
+                                                <td>1 or 2</td>
+                                            </tr>
+                                            <tr>
+                                                <td>NODE</td>
+                                                <td>String</td>
+                                                <td>Another ability that has to be unlocked required to unlock this
+                                                    ability
+                                                </td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td><a href="#ability-tree-archetype-requirements-object">ARCHETYPE</a>
+                                                </td>
+                                                <td>Object</td>
+                                                <td>Certain amount of archetype abilities required to unlock this
+                                                    ability
+                                                </td>
+                                                <td></td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                        <h3 id="ability-tree-archetype-requirements-object">Archetype Object (Ability
+                                            Tree Requirements)</h3>
+                                        <table>
+                                            <thead>
+                                            <tr>
+                                                <th>Field</th>
+                                                <th>Type</th>
+                                                <th>Description</th>
+                                                <th>Options</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                <td>name</td>
+                                                <td>String</td>
+                                                <td>Name of the required archetype</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>amount</td>
+                                                <td>Number</td>
+                                                <td>Amount of archetype abilities needed</td>
+                                                <td></td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="api-method-code">
+                                        <div class="api-method-sample" data-lang="v3" data-name="Version 3">
+                                            <h4 id="ability-tree-response">Response</h4>
+                                            <pre><code class="lang-js">{
+    <span class="hljs-string">&quot;archetypes&quot;</span>: {
+        <span class="hljs-string">&quot;{name}&quot;</span>: {
+            <span class="hljs-string">&quot;name&quot;</span>: <span class="hljs-built_in">String</span>,
+            <span class="hljs-string">&quot;description&quot;</span>: <span class="hljs-built_in">String</span>,
+            <span class="hljs-string">&quot;shortDescription&quot;</span>: <span class="hljs-built_in">String</span>,
+            <span class="hljs-string">&quot;icon&quot;</span>: <span class="hljs-built_in">String</span>
+        },
+        <span class="hljs-comment">// ...</span>
+    },
+    <span class="hljs-string">&quot;pages&quot;</span>: {
+        <span class="hljs-string">&quot;1&quot;</span>: {
+            <span class="hljs-string">&quot;{name}&quot;</span>: {
+                <span class="hljs-string">&quot;name&quot;</span>: <span class="hljs-built_in">String</span>,
+                <span class="hljs-string">&quot;archetype&quot;</span>: <span
+                                                        class="hljs-built_in">String</span> || <span
+                                                        class="hljs-built_in">null</span>,
+                <span class="hljs-string">&quot;icon&quot;</span>: <span class="hljs-built_in">String</span>,
+                <span class="hljs-string">&quot;slot&quot;</span>: <span class="hljs-built_in">Number</span>,
+                <span class="hljs-string">&quot;coordinates&quot;</span>: {
+                    <span class="hljs-string">&quot;x&quot;</span>: <span class="hljs-built_in">Number</span>,
+                    <span class="hljs-string">&quot;y&quot;</span>: <span class="hljs-built_in">Number</span>
+                },
+                <span class="hljs-string">&quot;description&quot;</span>: [<span class="hljs-built_in">String</span>],
+                <span class="hljs-string">&quot;requirements&quot;</span>: {
+                    <span class="hljs-string">&quot;ABILITY_POINTS&quot;</span>: <span
+                                                        class="hljs-built_in">Number</span>,
+                    <span class="hljs-string">&quot;NODE&quot;</span>: <span class="hljs-built_in">String</span>,
+                    <span class="hljs-string">&quot;ARCHETYPE&quot;</span>: {
+                        <span class="hljs-string">&quot;name&quot;</span>: <span class="hljs-built_in">String</span>,
+                        <span class="hljs-string">&quot;amount&quot;</span>: <span class="hljs-built_in">Number</span>
+                    }
+                },
+                <span class="hljs-string">&quot;links&quot;</span>: [<span class="hljs-built_in">String</span>] || <span
+                                                        class="hljs-built_in">null</span>,
+                <span class="hljs-string">&quot;locks&quot;</span>: [<span class="hljs-built_in">String</span>] || <span
+                                                        class="hljs-built_in">null</span>
+            },
+            <span class="hljs-comment">// ...</span>
+        },
+        <span class="hljs-string">&quot;2&quot;</span>: {
+            <span class="hljs-comment">// ...</span>
+        },
+        <span class="hljs-comment">// ...</span>
+    }
+}</code></pre>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <h2 id="ability-map">Ability Tree Map</h2>
+                                <hr>
+                                <div class="api-method">
+                                    <div class="api-method-definition">
+                                        <pre><code
+                                                class="lang-sh">GET https://web-api.wynncraft.com/v3/ability/map/{class name}</code></pre>
+                                        <p>Returns the layout of the ability tree of one of Wynncraft's classes.</p>
+                                        <h3 id="ability-map-object">Ability Map Object</h3>
+                                        <table>
+                                            <thead>
+                                            <tr>
+                                                <th>Field</th>
+                                                <th>Type</th>
+                                                <th>Description</th>
+                                                <th>Options</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                <td>pages</td>
+                                                <td>Number</td>
+                                                <td>Amount of pages in the ability tree</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td><a href="#ability-map-item-object">map</a></td>
+                                                <td>Array of Objects</td>
+                                                <td>All items belonging to the map</td>
+                                                <td></td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                        <h3 id="ability-map-item-object">Item Object (Ability Map)</h3>
+                                        <table>
+                                            <thead>
+                                            <tr>
+                                                <th>Field</th>
+                                                <th>Type</th>
+                                                <th>Description</th>
+                                                <th>Options</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                <td>TYPE</td>
+                                                <td>String</td>
+                                                <td>Type of the item</td>
+                                                <td><code>ABILITY</code>, <code>CONNECTOR</code></td>
+                                            </tr>
+                                            <tr>
+                                                <td><a href="#ability-map-coordinates-object">COORDINATES</a></td>
+                                                <td>Object</td>
+                                                <td>Coordinates of the ability or connector</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td><a href="#ability-map-meta-object">META</a></td>
+                                                <td>Object</td>
+                                                <td>Meta information about the item</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>FAMILY</td>
+                                                <td>Array of Strings</td>
+                                                <td>Family of the ability if the item is an ability, or families of all
+                                                    the abilities a connector is connecting
+                                                </td>
+                                                <td></td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                        <h3 id="ability-map-coordinates-object">Coordinates Object (Ability Map)</h3>
+                                        <table>
+                                            <thead>
+                                            <tr>
+                                                <th>Field</th>
+                                                <th>Type</th>
+                                                <th>Description</th>
+                                                <th>Options</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                <td>X</td>
+                                                <td>Number</td>
+                                                <td>x position of the ability or connector</td>
+                                                <td>1 - 9</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Y</td>
+                                                <td>Number</td>
+                                                <td>y position of the ability or connector</td>
+                                                <td>1 - 6</td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                        <h3 id="ability-map-meta-object">Meta Object (Ability Map Item)</h3>
+                                        <table>
+                                            <thead>
+                                            <tr>
+                                                <th>Field</th>
+                                                <th>Type</th>
+                                                <th>Description</th>
+                                                <th>Options</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                <td>ICON</td>
+                                                <td>String</td>
+                                                <td>Website-internal mapping to an icon</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>PAGE</td>
+                                                <td>String</td>
+                                                <td>Page number of the ability tree this item belongs to</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>ID</td>
+                                                <td>String</td>
+                                                <td>(Optional) ID of an ability</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>LINKS</td>
+                                                <td>Array of Strings</td>
+                                                <td>(Optional) Directions in which a connector is connecting</td>
+                                                <td></td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="api-method-code">
+                                        <div class="api-method-sample" data-lang="v3" data-name="Version 3">
+                                            <h4 id="ability-map-response">Response</h4>
+                                            <pre><code class="lang-js">{
+    <span class="hljs-string">&quot;pages&quot;</span>: <span class="hljs-built_in">Number</span>,
+    <span class="hljs-string">&quot;map&quot;</span>: [
+        {
+            <span class="hljs-string">&quot;TYPE&quot;</span>: <span class="hljs-built_in">String</span>,
+            <span class="hljs-string">&quot;COORDINATES&quot;</span>: {
+                <span class="hljs-string">&quot;X&quot;</span>: <span class="hljs-built_in">Number</span>,
+                <span class="hljs-string">&quot;Y&quot;</span>: <span class="hljs-built_in">Number</span>
+            },
+            <span class="hljs-string">&quot;META&quot;</span>: {
+                <span class="hljs-string">&quot;ICON&quot;</span>: <span class="hljs-built_in">String</span>,
+                <span class="hljs-string">&quot;PAGE&quot;</span>: <span class="hljs-built_in">String</span>,
+                <span class="hljs-string">&quot;ID&quot;</span>: <span class="hljs-built_in">String</span>,
+                <span class="hljs-string">&quot;LINKS&quot;</span>: [<span class="hljs-built_in">String</span>]
+            },
+            <span class="hljs-string">&quot;FAMILY&quot;</span>: [<span class="hljs-built_in">String</span>]
+        },
+        <span class="hljs-comment">// ...</span>
+    ]
+}</code></pre>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <h2 id="get">Get</h2>
+                                <hr>
+                                <div class="api-method">
+                                    <div class="api-method-definition">
+                                        <pre><code
+                                                class="lang-sh">GET https://web-api.wynncraft.com/v3/class/{class name}</code></pre>
+                                        <p>General information about a class and its archetypes.</p>
+                                        <h3 id="class-object">Class Object</h3>
+                                        <table>
+                                            <thead>
+                                            <tr>
+                                                <th>Field</th>
+                                                <th>Type</th>
+                                                <th>Description</th>
+                                                <th>Options</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                <td>id</td>
+                                                <td>String</td>
+                                                <td>Name of the class</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>name</td>
+                                                <td>String</td>
+                                                <td>Display name of the class and its reskinned version</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>lore</td>
+                                                <td>String</td>
+                                                <td>Description of the class</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>overallDifficulty</td>
+                                                <td>Number</td>
+                                                <td>Difficulty of playing this class</td>
+                                                <td>1 - 3</td>
+                                            </tr>
+                                            <tr>
+                                                <td><a href="#class-archetype-object">archetypes</a></td>
+                                                <td>Object</td>
+                                                <td>Object of all the archetypes of this class, mapped by their name
+                                                </td>
+                                                <td></td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                        <h3 id="class-archetype-object">Archetype Object (Class)</h3>
+                                        <table>
+                                            <thead>
+                                            <tr>
+                                                <th>Field</th>
+                                                <th>Type</th>
+                                                <th>Description</th>
+                                                <th>Options</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                <td>name</td>
+                                                <td>String</td>
+                                                <td>Display name of the class</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>difficulty</td>
+                                                <td>Number</td>
+                                                <td>Relative difficulty of playing this archetype</td>
+                                                <td>1 - 3</td>
+                                            </tr>
+                                            <tr>
+                                                <td>damage</td>
+                                                <td>Number</td>
+                                                <td>Relative damage of this archetype</td>
+                                                <td>1 - 3</td>
+                                            </tr>
+                                            <tr>
+                                                <td>defence</td>
+                                                <td>Number</td>
+                                                <td>Relative defence of this archetype</td>
+                                                <td>1 - 3</td>
+                                            </tr>
+                                            <tr>
+                                                <td>range</td>
+                                                <td>Number</td>
+                                                <td>Relative range of this archetype</td>
+                                                <td>1 - 3</td>
+                                            </tr>
+                                            <tr>
+                                                <td>speed</td>
+                                                <td>Number</td>
+                                                <td>Relative speed of this archetype</td>
+                                                <td>1 - 3</td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="api-method-code">
+                                        <div class="api-method-sample" data-lang="v3" data-name="Version 3">
+                                            <h4 id="get-response">Response</h4>
+                                            <pre><code class="lang-js">{
+    <span class="hljs-string">&quot;id&quot;</span>: <span class="hljs-built_in">String</span>,
+    <span class="hljs-string">&quot;name&quot;</span>: <span class="hljs-built_in">String</span>,
+    <span class="hljs-string">&quot;lore&quot;</span>: <span class="hljs-built_in">String</span>,
+    <span class="hljs-string">&quot;overallDifficulty&quot;</span>: <span class="hljs-built_in">Number</span>,
+    <span class="hljs-string">&quot;archetypes&quot;</span>: {
+        <span class="hljs-string">&quot;{name}&quot;</span>: {
+            <span class="hljs-string">&quot;name&quot;</span>: <span class="hljs-built_in">String</span>,
+            <span class="hljs-string">&quot;difficulty&quot;</span>: <span class="hljs-built_in">Number</span>,
+            <span class="hljs-string">&quot;damage&quot;</span>: <span class="hljs-built_in">Number</span>,
+            <span class="hljs-string">&quot;defence&quot;</span>: <span class="hljs-built_in">Number</span>,
+            <span class="hljs-string">&quot;range&quot;</span>: <span class="hljs-built_in">Number</span>,
+            <span class="hljs-string">&quot;speed&quot;</span>: <span class="hljs-built_in">Number</span>
+        },
+        <span class="hljs-comment">// ...</span>
+    }
+}</code></pre>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <h2 id="list">List</h2>
+                                <hr>
+                                <div class="api-method">
+                                    <div class="api-method-definition">
+                                        <pre><code
+                                                class="lang-sh">GET https://web-api.wynncraft.com/v3/classes</code></pre>
+                                        <p>Returns an objects that maps all of Wynncraft's classes to their display name
+                                            (including their reskinned type) and an estimation of the overall difficulty
+                                            of playing this class.</p>
+                                    </div>
+                                    <div class="api-method-code">
+                                        <div class="api-method-sample" data-lang="v3" data-name="Version 3">
+                                            <h4 id="list-response">Response</h4>
+                                            <pre><code class="lang-js">{
+    <span class="hljs-string">&quot;{name}&quot;</span>: {
+        <span class="hljs-string">&quot;name&quot;</span>: <span class="hljs-built_in">String</span>,
+        <span class="hljs-string">&quot;overallDifficulty&quot;</span>: <span class="hljs-built_in">Number</span>
+    },
+    <span class="hljs-comment">// ...</span>
+}</code></pre>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function () {
+            gitbook.page.hasChanged({
+                "page": {},
+                "config": {
+                    "plugins": ["favicon-custom", "insert-logo-link-style", "theme-api"],
+                    "pluginsConfig": {
+                        "insert-logo-link-style": {
+                            "link": "https://wynncraft.com/",
+                            "src": "https://cdn.wynncraft.com/img/logo.png",
+                            "style": "background: none; width:50%;",
+                            "target": "_blank"
+                        },
+                        "fontsettings": {"theme": "white", "family": "sans", "size": 2},
+                        "theme-api": {"split": true, "theme": "light"}
+                    },
+                },
+                "file": {},
+                "gitbook": {},
+                "basePath": "..",
+                "book": {}
+            });
+        });
+    </script>
+</div>
+
+<script src="../gitbook/gitbook.js"></script>
+<script src="../gitbook/theme.js"></script>
+<script src="../gitbook/gitbook-plugin-insert-logo-link-style/plugin.js"></script>
+<script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+<script src="../gitbook/gitbook-plugin-theme-api/theme-api.js"></script>
+
+</body>
+</html>
